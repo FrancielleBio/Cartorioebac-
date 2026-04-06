@@ -121,7 +121,9 @@ int main() // função principal do programa
         printf("Escolha a opção desejada do menu\n\n"); // instrução
         printf("\t1 - Registrar nomes\n"); // opção 1
         printf("\t2 - Consultar nomes\n"); // opção 2
-        printf("\t3 - Deletar nomes\n\n"); // opção 3
+        printf("\t3 - Deletar nomes\n"); // opção 3
+        printf("\t4 - Sair do sistema\n\n"); // opção 4
+        
         printf("Opçao: "); // entrada
 
         scanf("%d", &opcao); // lê a opção do usuário
@@ -141,6 +143,12 @@ int main() // função principal do programa
 			case 3: // opção de deletar
 			deletar();
 			break; 
+			
+			case 4: 
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
+			
 			
 			default: // opção inválida
 			printf("Está opção não está disponível\n"); 
